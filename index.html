@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srednia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="window">
+        <label for="inputNazwa" id="LN">Podaj nazwe sredniej:</label>
+        <input type="text" id="inputNazwa" name="inputNazwa">
+        <button id="btnNazwa">ZAPISZ</button>
+    </div>
+    <div id="container">
+        <div id="licznik">
+            <div id="D0">
+                <label for="ocena-input" id="L1">Dodaj ocene:</label>
+                <input type="number" id="ocena-input" name="ocena-input">
+                <div class="pasek-d">
+                    <div id="pasek1" class="paski"></div>
+                </div>
+                <label for="waga-input" id="L2">Podaj wage</label>
+                <input type="number" id="waga-input" name="waga-input">
+                <div class="pasek-d">
+                    <div id="pasek2" class="paski"></div>
+                </div>
+            </div>
+            <div id="values">
+                <p id="p1">Wartości</p>
+                <div id="box-values"></div>
+            </div>
+            <button id="btn">DODAJ WARTOŚCI</button>
+            <button id="btn2">OBLICZ ŚREDNIĄ</button>
+        </div>
+        <div id="srednia"></div>
+    </div>
+    <script src="index.js"></script>
+    <script src="srednia.js"></script>
+</body>
+</html>
